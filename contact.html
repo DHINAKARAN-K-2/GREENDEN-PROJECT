@@ -14,26 +14,39 @@
 </head>
 
 <body>
+    <!--Navbar for mobile view-->
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 md:hidden z-50">
+        <button id="close-btn" class="relative top-3 left-3"><i class="fa-solid fa-xmark " style="color: #000000;"></i></button>
+        <ul class="flex flex-col gap-3 px-6 p-3 mt-4 font-medium">
+            <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+            <li><a href="product.html" class="hover:text-blue-600">Products</a></li>
+            <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+             
+            
+
+        </ul>
+
+    </div>
     <!--Responsive NavBar-->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl font-bold">GREENDEN</h1>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+            class="w-6 h-6 md:hidden" id="menu-btn">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
 
 
         <ul class="flex gap-5 text-gray-600 hidden md:flex ">
-            <li class="hover:underline hover:text-black">
+            <li class="hover:bg-green-300 px-2 py-2 rounded-lg hover:text-black">
                 <a href="index.html">Home</a>
 
             </li>
-            <li class="hover:underline hover:text-black">
+            <li class="hover:bg-green-300 px-2 py-2 rounded-lg hover:text-black">
                 <a href="product.html">Products</a>
 
             </li>
-            <li class="hover:underline hover:text-black">
+            <li class="hover:bg-green-300 px-2 py-2 rounded-lg hover:text-black">
                 <a href="contact.html">Contact</a>
 
             </li>
@@ -99,7 +112,7 @@
                 </div>
             </div>
             <div class="mt-10">
-                <button type="submit" class="bg-blue-600 text-white rounded-sm py-2 w-full block">Submit →</button>
+                <button type="submit" class="bg-blue-600 text-white rounded-sm py-2 w-full block hover:bg-blue-800">Submit →</button>
             </div>
         </form>
     </div>
@@ -111,6 +124,7 @@
         <P>@copy 2021 Greenden.com</P>
 
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
